@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SKYTUNNEL",
-  description: "Private access made simple.",
+  description: "Интернет‑ускоритель и защищённое соединение для стабильной скорости.",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className="antialiased">{children}</body>
     </html>
   );

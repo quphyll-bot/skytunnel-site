@@ -18,39 +18,39 @@ import { NavBar } from "@/components/NavBar";
 
 const features = [
   {
-    title: "Private access, global scale",
+    title: "Сверхнизкий пинг в играх",
     description:
-      "Route through ultra-low latency gateways with automatic path selection and zero-touch optimization.",
-    icon: Globe2,
+      "Ускоритель маршрутов автоматически выбирает самый быстрый путь и снижает задержки.",
+    icon: Gauge,
   },
   {
-    title: "Always-on protection",
+    title: "Стабильное защищённое соединение",
     description:
-      "Multi-layer encryption, adaptive threat detection, and instant key rotation keep every session clean.",
+      "Многоуровневое шифрование и умные правила доступа держат канал чистым и быстрым.",
     icon: ShieldCheck,
   },
   {
-    title: "Turbo performance",
+    title: "Работает на всех устройствах",
     description:
-      "Smart compression and AI acceleration deliver peak speeds for work, play, and streaming.",
-    icon: Gauge,
+      "Единый приватный канал для компьютеров, телефонов и планшетов — без лишней настройки.",
+    icon: Globe2,
   },
 ];
 
 const steps = [
   {
-    title: "Pick a zone",
-    description: "Select a region tuned for speed, stability, and local compliance.",
+    title: "Выбери регион",
+    description: "Подберём оптимальную точку ускорения по скорости и стабильности.",
     icon: Radio,
   },
   {
-    title: "Link your devices",
-    description: "Create a secure tunnel that follows you across every screen.",
+    title: "Подключи устройства",
+    description: "Создай защищённый туннель и подключайся в один тап.",
     icon: Fingerprint,
   },
   {
-    title: "Stay in control",
-    description: "Monitor sessions, throttle traffic, and automate access rules.",
+    title: "Управляй скоростью",
+    description: "Контроль трафика, диагностика и автоматизация в одном центре.",
     icon: Sparkles,
   },
 ];
@@ -58,21 +58,22 @@ const steps = [
 const pricing = [
   {
     name: "Pulse",
-    price: "$6",
-    description: "For solo creators and founders who need privacy on the go.",
-    perks: ["3 devices", "Smart routing", "Session insights"],
+    price: "399₽",
+    description: "Идеально для личного ускорителя и приватного канала.",
+    perks: ["3 устройства", "Умная маршрутизация", "Диагностика сессий"],
   },
   {
     name: "Orbit",
-    price: "$12",
-    description: "For teams syncing across time zones with shared control.",
-    perks: ["10 devices", "Shared workspaces", "Priority lanes"],
+    price: "799₽",
+    description: "Для тех, кто хочет стабильность везде и всегда.",
+    perks: ["10 устройств", "Общий контроль", "Приоритетные линии"],
+    badge: "Хит",
   },
   {
     name: "Nova",
-    price: "$22",
-    description: "For high-throughput operations and advanced policy control.",
-    perks: ["Unlimited devices", "Dedicated gateways", "24/7 concierge"],
+    price: "1490₽",
+    description: "Максимальная скорость и продвинутые правила доступа.",
+    perks: ["Безлимит устройств", "Выделенные узлы", "24/7 поддержка"],
   },
 ];
 
@@ -92,34 +93,35 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-neon.cyan/80">
               <Sparkles className="h-4 w-4" />
-              SkyTunnel Core
+              SKYTUNNEL • Ускоритель
             </div>
             <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-              Private access that feels like a neon dream.
+              Интернет на сверхзвуковой скорости
             </h1>
             <p className="text-base text-slate-300 md:text-lg">
-              SKYTUNNEL blends performance, control, and cinematic design into a secure tunnel that keeps you online, focused, and protected.
+              Забудь о лагах, высоком пинге и медленной загрузке. Стабильный доступ к
+              любимым сервисам и играм через защищённый приватный канал.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button href="/setup">
-                Launch setup <ArrowRight className="h-4 w-4" />
+                Ускорить интернет <ArrowRight className="h-4 w-4" />
               </Button>
               <Button href="/login" variant="outline">
-                View dashboard
+                Войти
               </Button>
             </div>
             <div className="flex flex-wrap gap-6 text-sm text-slate-300">
               <div>
                 <p className="text-white">120+</p>
-                <p className="text-xs uppercase tracking-[0.2em]">Gateways</p>
+                <p className="text-xs uppercase tracking-[0.2em]">Узлов</p>
               </div>
               <div>
                 <p className="text-white">99.99%</p>
-                <p className="text-xs uppercase tracking-[0.2em]">Uptime</p>
+                <p className="text-xs uppercase tracking-[0.2em]">Аптайм</p>
               </div>
               <div>
                 <p className="text-white">24/7</p>
-                <p className="text-xs uppercase tracking-[0.2em]">Command</p>
+                <p className="text-xs uppercase tracking-[0.2em]">Контроль</p>
               </div>
             </div>
           </motion.div>
@@ -147,9 +149,9 @@ export default function Home() {
         <section id="flow" className="py-16">
           <Container className="grid gap-10">
             <SectionHeading
-              eyebrow="Flow"
-              title="A setup flow that glows"
-              description="Go from zero to protected in minutes with guided flows and instant diagnostics."
+              eyebrow="Подключение"
+              title="Быстрый старт за минуты"
+              description="Запуск ускорения — за несколько простых шагов и без лишней ручной настройки."
             />
             <div className="grid gap-6 md:grid-cols-3">
               {steps.map((step, index) => (
@@ -175,23 +177,23 @@ export default function Home() {
         <section id="controls" className="py-16">
           <Container className="grid gap-10 md:grid-cols-[1fr_1.1fr] md:items-center">
             <SectionHeading
-              eyebrow="Controls"
-              title="Your command center"
-              description="Visualize every session, deploy automation, and let the neural router handle the rest."
+              eyebrow="Контроль"
+              title="Центр управления ускорением"
+              description="Смотри статистику, управляй потоками и автоматизируй правила — всё в одном месте."
             />
             <div className="grid gap-5">
               <GlowCard className="space-y-3">
-                <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">Realtime map</p>
-                <p className="text-lg font-semibold">Adaptive routing with live telemetry</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">Телеметрия</p>
+                <p className="text-lg font-semibold">Живые метрики скорости</p>
                 <p className="text-sm text-slate-300">
-                  Track latency, jitter, and packet health for every lane with full visibility.
+                  Контроль пинга, джиттера и качества каналов в реальном времени.
                 </p>
               </GlowCard>
               <GlowCard className="space-y-3">
-                <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">Policy engine</p>
-                <p className="text-lg font-semibold">Granular access rules</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">Политики</p>
+                <p className="text-lg font-semibold">Гибкие правила доступа</p>
                 <p className="text-sm text-slate-300">
-                  Build custom policies for devices, apps, and schedules without touching a line of code.
+                  Настраивай приватные каналы под устройства и задачи без лишней сложности.
                 </p>
               </GlowCard>
             </div>
@@ -201,18 +203,25 @@ export default function Home() {
         <section id="pricing" className="py-16">
           <Container className="grid gap-10">
             <SectionHeading
-              eyebrow="Pricing"
-              title="Plans that scale with you"
-              description="Select the plan that fits your velocity. Upgrade or pause anytime."
+              eyebrow="Тарифы"
+              title="Планы под любую нагрузку"
+              description="Выбери нужную скорость и масштабируйся в один клик."
             />
             <div className="grid gap-6 md:grid-cols-3">
               {pricing.map((plan) => (
                 <GlowCard key={plan.name} className="flex h-full flex-col">
                   <div className="space-y-2">
-                    <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">{plan.name}</p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan">{plan.name}</p>
+                      {plan.badge ? (
+                        <span className="rounded-full bg-neon.pink/20 px-2 py-1 text-[10px] uppercase tracking-[0.2em] text-neon.pink">
+                          {plan.badge}
+                        </span>
+                      ) : null}
+                    </div>
                     <p className="text-3xl font-semibold">
                       {plan.price}
-                      <span className="text-sm text-slate-400">/mo</span>
+                      <span className="text-sm text-slate-400">/мес</span>
                     </p>
                     <p className="text-sm text-slate-300">{plan.description}</p>
                   </div>
@@ -224,7 +233,7 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Button className="mt-6">Choose {plan.name}</Button>
+                  <Button className="mt-6">Выбрать {plan.name}</Button>
                 </GlowCard>
               ))}
             </div>
@@ -234,13 +243,13 @@ export default function Home() {
 
       <footer className="border-t border-white/10 py-10">
         <Container className="flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
-          <p>© 2026 SKYTUNNEL. All rights reserved.</p>
+          <p>© 2026 SKYTUNNEL. Все права защищены.</p>
           <div className="flex gap-4">
             <a className="transition hover:text-white" href="/login">
-              Account
+              Войти
             </a>
             <a className="transition hover:text-white" href="/setup">
-              Setup
+              Подключение
             </a>
           </div>
         </Container>

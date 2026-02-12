@@ -23,29 +23,29 @@ export default function LoginPage() {
                 <ShieldCheck className="h-5 w-5 text-neon.cyan" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Welcome back</p>
-                <h1 className="text-2xl font-semibold">Sign in to SKYTUNNEL</h1>
+                <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Добро пожаловать</p>
+                <h1 className="text-2xl font-semibold">Вход в SKYTUNNEL</h1>
               </div>
             </div>
 
             <div className="grid gap-4">
               <FormField label="Email" placeholder="you@skytunnel.io" type="email" />
-              <FormField label="Access key" placeholder="••••••••" type="password" />
+              <FormField label="Ключ доступа" placeholder="••••••••" type="password" />
             </div>
 
             <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
               <label className="flex items-center gap-2">
                 <input type="checkbox" className="h-4 w-4 rounded border-white/20 bg-white/5" />
-                Keep me signed in
+                Запомнить меня
               </label>
               <button className="text-neon.cyan/80 hover:text-neon.cyan" type="button">
-                Need help?
+                Нужна помощь?
               </button>
             </div>
 
-            <Button className="w-full">Enter dashboard</Button>
+            <Button className="w-full">Войти в систему</Button>
             <p className="text-center text-xs text-slate-400">
-              New here? <a className="text-neon.cyan" href="/setup">Start setup</a>
+              Впервые здесь? <a className="text-neon.cyan" href="/setup">Запустить настройку</a>
             </p>
           </GlowCard>
         </motion.div>

@@ -14,20 +14,20 @@ export function NavBar() {
         </div>
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
           <a className="transition hover:text-white" href="#flow">
-            Flow
+            Подключение
           </a>
           <a className="transition hover:text-white" href="#controls">
-            Controls
+            Контроль
           </a>
           <a className="transition hover:text-white" href="#pricing">
-            Pricing
+            Тарифы
           </a>
         </nav>
         <div className="flex items-center gap-3">
           <Button href="/login" variant="ghost" className="hidden md:inline-flex">
-            Sign in
+            Войти
           </Button>
-          <Button href="/setup">Start now</Button>
+          <Button href="/setup">Начать</Button>
         </div>
       </Container>
     </header>

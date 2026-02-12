@@ -7,7 +7,7 @@ import { Container } from "@/components/Container";
 import { FormField } from "@/components/FormField";
 import { GlowCard } from "@/components/GlowCard";
 
-const zones = ["North America", "Europe", "Middle East", "Asia Pacific"];
+const zones = ["Северная Америка", "Европа", "Ближний Восток", "Азия"];
 const plans = ["Pulse", "Orbit", "Nova"];
 
 export default function SetupPage() {
@@ -21,10 +21,10 @@ export default function SetupPage() {
           className="mx-auto grid max-w-5xl gap-8"
         >
           <div className="space-y-3">
-            <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan/70">Quick setup</p>
-            <h1 className="text-3xl font-semibold md:text-4xl">Activate your private tunnel</h1>
+            <p className="text-xs uppercase tracking-[0.3em] text-neon.cyan/70">Подключение</p>
+            <h1 className="text-3xl font-semibold md:text-4xl">Как подключить ускорение?</h1>
             <p className="text-sm text-slate-300 md:text-base">
-              Create a secure profile, select your zone, and launch in minutes.
+              Создай профиль, выбери регион и запусти приватный канал за пару минут.
             </p>
           </div>
 
@@ -34,14 +34,14 @@ export default function SetupPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
                   <Zap className="h-5 w-5 text-neon.cyan" />
                 </div>
-                <h2 className="text-xl font-semibold">Profile details</h2>
+                <h2 className="text-xl font-semibold">Данные профиля</h2>
               </div>
               <div className="grid gap-4">
-                <FormField label="Full name" placeholder="Sky Operator" />
-                <FormField label="Work email" placeholder="operator@skytunnel.io" type="email" />
-                <FormField label="Device label" placeholder="Studio MacBook" />
+                <FormField label="Имя" placeholder="Sky Operator" />
+                <FormField label="Email" placeholder="operator@skytunnel.io" type="email" />
+                <FormField label="Устройство" placeholder="MacBook / Android" />
               </div>
-              <Button className="w-full">Continue</Button>
+              <Button className="w-full">Продолжить</Button>
             </GlowCard>
 
             <div className="grid gap-6">
@@ -50,7 +50,7 @@ export default function SetupPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
                     <MapPin className="h-5 w-5 text-neon.pink" />
                   </div>
-                  <h2 className="text-xl font-semibold">Preferred zone</h2>
+                  <h2 className="text-xl font-semibold">Предпочитаемый регион</h2>
                 </div>
                 <div className="grid gap-3">
                   {zones.map((zone) => (
@@ -70,7 +70,7 @@ export default function SetupPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
                     <CheckCircle2 className="h-5 w-5 text-neon.cyan" />
                   </div>
-                  <h2 className="text-xl font-semibold">Select plan</h2>
+                  <h2 className="text-xl font-semibold">Выбери тариф</h2>
                 </div>
                 <div className="grid gap-3">
                   {plans.map((plan) => (
@@ -83,7 +83,7 @@ export default function SetupPage() {
                     </label>
                   ))}
                 </div>
-                <Button className="w-full">Activate access</Button>
+                <Button className="w-full">Активировать доступ</Button>
               </GlowCard>
             </div>
           </div>
